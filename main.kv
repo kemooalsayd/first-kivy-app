@@ -1,0 +1,298 @@
+
+MW:
+    Intm:
+    Intf:
+    Ints:
+    Intt:
+    Siu:
+    Ero:
+    MApp:
+    Fw:
+    Sw:
+    Tw:
+
+<Intm>:
+    name:'introm'
+    GridLayout:
+        rows:6
+        Label:
+            text:'HOW ARE YOU'
+            color:(12/255,126/255,200/255,1)
+            size_hint:(1,.3)
+        Label:
+            text:'__________'*2
+            font_size:30
+            size_hint:(1,.1)
+            color:(12/255,126/255,200/255,1)
+        Image:
+            source:'i.jpeg'
+        Label:
+            text:'__________'*2
+            font_size:30
+            size_hint:(1,.1)
+            color:(12/255,126/255,200/255,1)
+        Label:
+            text:'welcome to our apps we happy to see you'
+            color:(12/255,126/255,200/255,1)
+            size_hint:(1,.3)
+
+
+        GridLayout:
+            cols:2
+            size_hint:(1,.2)
+            Button:
+                text:'skip'
+                background_color:(12/255,126/255,200/255,1)
+                on_release:
+                    app.root.current="main"
+                    root.manager.transition.direction="up"
+            Button:
+                text:'next'
+                background_color:(12/255,126/255,200/255,1)
+                on_release:
+                    app.root.current="introf"
+                    root.manager.transition.direction="left"
+<Intf>:
+    name:'introf'
+    GridLayout:
+        rows:6
+        Label:
+            text:'HOW ARE YOU'
+            color:(12/255,126/255,200/255,1)
+            size_hint:(1,.3)
+        Label:
+            text:'__________'*2
+            font_size:30
+            size_hint:(1,.1)
+            color:(12/255,126/255,200/255,1)
+        Image:
+            source:'l.jpg'
+        Label:
+            text:'__________'*2
+            font_size:30
+            size_hint:(1,.1)
+            color:(12/255,126/255,200/255,1)
+        Label:
+            text:'welcome to our apps we happy to see you'
+            color:(12/255,126/255,200/255,1)
+            size_hint:(1,.3)
+
+
+        GridLayout:
+            cols:2
+            size_hint:(1,.2)
+            Button:
+                text:'last'
+                background_color:(12/255,126/255,200/255,1)
+                on_release:
+                    app.root.current="introm"
+                    root.manager.transition.direction="right"
+            Button:
+                text:'next'
+                background_color:(12/255,126/255,200/255,1)
+                on_release:
+                    app.root.current="intros"
+                    root.manager.transition.direction="left"
+<Ints>:
+    name:'intros'
+    GridLayout:
+        rows:6
+        Label:
+            text:'HOW ARE YOU'
+            color:(12/255,126/255,200/255,1)
+            size_hint:(1,.3)
+        Label:
+            text:'__________'*2
+            font_size:30
+            size_hint:(1,.1)
+            color:(12/255,126/255,200/255,1)
+        Image:
+            source:'images.jpg'
+        Label:
+            text:'__________'*2
+            font_size:30
+            size_hint:(1,.1)
+            color:(12/255,126/255,200/255,1)
+        Label:
+            text:'welcome to our apps we happy to see you'
+            color:(12/255,126/255,200/255,1)
+            size_hint:(1,.3)
+
+
+        GridLayout:
+            cols:2
+            size_hint:(1,.2)
+            Button:
+                text:'last'
+                background_color:(12/255,126/255,200/255,1)
+                on_release:
+                    app.root.current="introf"
+                    root.manager.transition.direction="right"
+            Button:
+                text:'next'
+                background_color:(12/255,126/255,200/255,1)
+                on_release:
+                    app.root.current="introt"
+                    root.manager.transition.direction="left"
+<Intt>:
+    name:'introt'
+    GridLayout:
+        rows:6
+        Label:
+            text:'HOW ARE YOU'
+            color:(12/255,126/255,200/255,1)
+            size_hint:(1,.3)
+        Label:
+            text:'__________'*2
+            font_size:30
+            size_hint:(1,.1)
+            color:(12/255,126/255,200/255,1)
+        Image:
+            source:'w.jpg'
+        Label:
+            text:'__________'*2
+            font_size:30
+            size_hint:(1,.1)
+            color:(12/255,126/255,200/255,1)
+        Label:
+            text:'welcome to our apps we happy to see you'
+            color:(12/255,126/255,200/255,1)
+            size_hint:(1,.3)
+
+
+        GridLayout:
+            cols:2
+            size_hint:(1,.2)
+            Button:
+                text:'last'
+                background_color:(12/255,126/255,200/255,1)
+                on_release:
+                    app.root.current="intros"
+                    root.manager.transition.direction="right"
+            Button:
+                text:'finish'
+                background_color:(12/255,126/255,200/255,1)
+                on_release:
+                    app.root.current="main"
+                    root.manager.transition.direction="up"
+
+<Siu>:
+    name:"main"
+    GridLayout:
+        cols:1
+        rows:4
+        GridLayout:
+            cols:1
+            rows:2
+            size_hint:(1,.5)
+            padding:10
+            Image:
+                source:'icon.png'
+            Label:
+                text:'Please sign up'
+                font_size:22
+                color:(0,0,0,1)
+        Label:
+            id:inp
+            text:'__________'*2
+            font_size:30
+            size_hint:(1,.1)
+            color:(12/255,126/255,200/255,1)
+        GridLayout:
+            cols:1
+            rows:3
+            padding:20
+            GridLayout:
+                cols:1
+                rows:2
+                Label:
+                    text:'enter your name :'
+                    color:(12/255,126/255,200/255,1)
+                TextInput:
+                    id:nam
+                    multiline:False
+                    size_hint:(.9,.5)
+            GridLayout:
+                cols:1
+                rows:2
+                Label:
+                    text:'enter your email :'
+                    color:(12/255,126/255,200/255,1)
+                TextInput:
+                    id:ema
+                    multiline:False
+                    size_hint:(.9,.5)
+            GridLayout:
+                cols:1
+                rows:2
+                Label:
+                    text:'enter your password :'
+                    color:(12/255,126/255,200/255,1)
+                TextInput:
+                    id:pas
+                    password:True
+                    size_hint:(.9,.5)
+        Button:
+            text:'sign up'
+            size_hint:(1,.2)
+            background_color:(12/255,126/255,200/255,1)
+            on_release:
+                app.root.current="mapp"if pas.text=='123456' and nam.text=='kareem' and ema.text=='kemoo@gmail.com' else"ero"
+                root.manager.transition.direction="up"
+<Ero>:
+    name:'ero'
+    GridLayout:
+        rows:3
+        Image:
+            source:"error-icon-32.png"
+        Label:
+            text:'data is wrong'
+            color:(1,0,0,1)
+            font_size:24
+            size_hint:(1,.2)
+
+        Button:
+            size_hint:(1,.2)
+            background_color:(1,0,0,1)
+            font_size:20
+            text:'Try again'
+            on_release:
+                app.root.current="main"
+                root.manager.transition.direction="down"
+
+<MApp>:
+    name:'mapp'
+    GridLayout:
+        rows:2
+        GridLayout:
+            cols:4
+            size_hint:(1,.1)
+            Button:
+                text:'Basics'
+            Button:
+                text:'madium'
+            Button:
+                text:'Advance'
+            Button:
+                text:'Q&A'
+        GridLayout:
+            rows:2
+            ScrollView:
+                Label:
+                    text:'kemoo'
+                    size_hint_y: None
+                    height: self.texture_size[1]
+                    text_size: self.width, None
+                    padding: 10, 10
+                    color:(0,0,0,1)
+            Button:
+                size_hint:(1,.2)
+                background_color:(1,0,0,1)
+                font_size:20
+                text:'Try again'
+                on_release:
+                    app.root.current="main"
+                    root.manager.transition.direction="down"
+
+
+# 12.126.171
