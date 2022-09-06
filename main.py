@@ -10,6 +10,12 @@ class MW(ScreenManager):
     pass
 class Intm(Screen):
     pass
+class Lm(Screen):
+    pass
+class La(Screen):
+    pass
+class QA(Screen):
+    pass
 class Intf(Screen):
     pass
 class Ints(Screen):

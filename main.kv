@@ -1,15 +1,18 @@
 
 MW:
+    MApp:
     Intm:
     Intf:
     Ints:
     Intt:
     Siu:
     Ero:
-    MApp:
     Fw:
     Sw:
     Tw:
+    Lm:
+    La:
+    QA:
 
 <Intm>:
     name:'introm'
@@ -269,30 +272,485 @@ MW:
             size_hint:(1,.1)
             Button:
                 text:'Basics'
+                background_color:(0,0,0, 1)
+                on_release:
+                    app.root.current="mapp"
+                    root.manager.transition.direction="up"
+
             Button:
                 text:'madium'
+                background_color:(12/255,126/255,200/255,1)
+                on_release:
+                    app.root.current="lm"
+                    root.manager.transition.direction="left"
             Button:
                 text:'Advance'
+                background_color:(12/255,126/255,200/255,1)
+                on_release:
+                    app.root.current="la"
+                    root.manager.transition.direction="left"
             Button:
                 text:'Q&A'
+                background_color:(12/255,126/255,200/255,1)
+                on_release:
+                    app.root.current="qa"
+                    root.manager.transition.direction="left"
         GridLayout:
-            rows:2
-            ScrollView:
-                Label:
-                    text:'kemoo'
-                    size_hint_y: None
-                    height: self.texture_size[1]
-                    text_size: self.width, None
-                    padding: 10, 10
-                    color:(0,0,0,1)
+            rows:11
+            Label:
+                text:'Basics'
+                color:(12/255,126/255,200/255,1)
+                size_hint:(1,.08)
+                font_size:30
             Button:
-                size_hint:(1,.2)
-                background_color:(1,0,0,1)
+                size_hint:(1,.1)
+                background_color:(12/255,126/255,200/255,1)
                 font_size:20
                 text:'Try again'
                 on_release:
                     app.root.current="main"
                     root.manager.transition.direction="down"
+            Button:
+                size_hint:(1,.1)
+                background_color:(12/255,126/255,200/255,1)
+                font_size:20
+                text:'Try again'
+                on_release:
+                    app.root.current="main"
+                    root.manager.transition.direction="down"
+            Button:
+                size_hint:(1,.1)
+                background_color:(12/255,126/255,200/255,1)
+                font_size:20
+                text:'Try again'
+                on_release:
+                    app.root.current="main"
+                    root.manager.transition.direction="down"
+            Button:
+                size_hint:(1,.1)
+                background_color:(12/255,126/255,200/255,1)
+                font_size:20
+                text:'Try again'
+                on_release:
+                    app.root.current="main"
+                    root.manager.transition.direction="down"
+            Button:
+                size_hint:(1,.1)
+                background_color:(12/255,126/255,200/255,1)
+                font_size:20
+                text:'Try again'
+                on_release:
+                    app.root.current="main"
+                    root.manager.transition.direction="down"
+            Button:
+                size_hint:(1,.1)
+                background_color:(12/255,126/255,200/255,1)
+                font_size:20
+                text:'Try again'
+                on_release:
+                    app.root.current="main"
+                    root.manager.transition.direction="down"
+            Button:
+                size_hint:(1,.1)
+                background_color:(12/255,126/255,200/255,1)
+                font_size:20
+                text:'Try again'
+                on_release:
+                    app.root.current="main"
+                    root.manager.transition.direction="down"
+            Button:
+                size_hint:(1,.1)
+                background_color:(12/255,126/255,200/255,1)
+                font_size:20
+                text:'Try again'
+                on_release:
+                    app.root.current="main"
+                    root.manager.transition.direction="down"
+            Button:
+                size_hint:(1,.1)
+                background_color:(12/255,126/255,200/255,1)
+                font_size:20
+                text:'Try again'
+                on_release:
+                    app.root.current="main"
+                    root.manager.transition.direction="down"
+            Button:
+                size_hint:(1,.1)
+                background_color:(12/255,126/255,200/255,1)
+                font_size:20
+                text:'Try again'
+                on_release:
+                    app.root.current="main"
+                    root.manager.transition.direction="down"
+
+
+
+<Lm>:
+    name:'lm'
+    GridLayout:
+        rows:2
+        GridLayout:
+            cols:4
+            size_hint:(1,.1)
+            Button:
+                text:'Basics'
+                background_color:(12/255,126/255,200/255,1)
+                on_release:
+                    app.root.current="mapp"
+                    root.manager.transition.direction="right"
+
+            Button:
+                text:'madium'
+                background_color:(0,0,0, 1)
+                on_release:
+                    app.root.current="lm"
+                    root.manager.transition.direction="up"
+            Button:
+                text:'Advance'
+                background_color:(12/255,126/255,200/255,1)
+                on_release:
+                    app.root.current="la"
+                    root.manager.transition.direction="left"
+            Button:
+                text:'Q&A'
+                background_color:(12/255,126/255,200/255,1)
+                on_release:
+                    app.root.current="qa"
+                    root.manager.transition.direction="left"
+
+        GridLayout:
+            rows:11
+            Label:
+                text:'Basics'
+                color:(12/255,126/255,200/255,1)
+                size_hint:(1,.08)
+                font_size:30
+            Button:
+                size_hint:(1,.1)
+                background_color:(12/255,126/255,200/255,1)
+                font_size:20
+                text:'Try again'
+                on_release:
+                    app.root.current="main"
+                    root.manager.transition.direction="down"
+            Button:
+                size_hint:(1,.1)
+                background_color:(12/255,126/255,200/255,1)
+                font_size:20
+                text:'Try again'
+                on_release:
+                    app.root.current="main"
+                    root.manager.transition.direction="down"
+            Button:
+                size_hint:(1,.1)
+                background_color:(12/255,126/255,200/255,1)
+                font_size:20
+                text:'Try again'
+                on_release:
+                    app.root.current="main"
+                    root.manager.transition.direction="down"
+            Button:
+                size_hint:(1,.1)
+                background_color:(12/255,126/255,200/255,1)
+                font_size:20
+                text:'Try again'
+                on_release:
+                    app.root.current="main"
+                    root.manager.transition.direction="down"
+            Button:
+                size_hint:(1,.1)
+                background_color:(12/255,126/255,200/255,1)
+                font_size:20
+                text:'Try again'
+                on_release:
+                    app.root.current="main"
+                    root.manager.transition.direction="down"
+            Button:
+                size_hint:(1,.1)
+                background_color:(12/255,126/255,200/255,1)
+                font_size:20
+                text:'Try again'
+                on_release:
+                    app.root.current="main"
+                    root.manager.transition.direction="down"
+            Button:
+                size_hint:(1,.1)
+                background_color:(12/255,126/255,200/255,1)
+                font_size:20
+                text:'Try again'
+                on_release:
+                    app.root.current="main"
+                    root.manager.transition.direction="down"
+            Button:
+                size_hint:(1,.1)
+                background_color:(12/255,126/255,200/255,1)
+                font_size:20
+                text:'Try again'
+                on_release:
+                    app.root.current="main"
+                    root.manager.transition.direction="down"
+            Button:
+                size_hint:(1,.1)
+                background_color:(12/255,126/255,200/255,1)
+                font_size:20
+                text:'Try again'
+                on_release:
+                    app.root.current="main"
+                    root.manager.transition.direction="down"
+            Button:
+                size_hint:(1,.1)
+                background_color:(12/255,126/255,200/255,1)
+                font_size:20
+                text:'Try again'
+                on_release:
+                    app.root.current="main"
+                    root.manager.transition.direction="down"
+
+
+
+<La>:
+    name:'la'
+    GridLayout:
+        rows:2
+        GridLayout:
+            cols:4
+            size_hint:(1,.1)
+            Button:
+                text:'Basics'
+                background_color:(12/255,126/255,200/255,1)
+                on_release:
+                    app.root.current="mapp"
+                    root.manager.transition.direction="right"
+
+            Button:
+                text:'madium'
+                background_color:(12/255,126/255,200/255,1)
+                on_release:
+                    app.root.current="lm"
+                    root.manager.transition.direction="right"
+            Button:
+                text:'Advance'
+                background_color:(0,0,0, 1)
+                on_release:
+                    app.root.current="la"
+                    root.manager.transition.direction="up"
+            Button:
+                text:'Q&A'
+                background_color:(12/255,126/255,200/255,1)
+                on_release:
+                    app.root.current="qa"
+                    root.manager.transition.direction="left"
+
+        GridLayout:
+            rows:11
+            Label:
+                text:'Advanced'
+                color:(12/255,126/255,200/255,1)
+                size_hint:(1,.08)
+                font_size:30
+            Button:
+                size_hint:(1,.1)
+                background_color:(12/255,126/255,200/255,1)
+                font_size:20
+                text:'Try again'
+                on_release:
+                    app.root.current="main"
+                    root.manager.transition.direction="down"
+            Button:
+                size_hint:(1,.1)
+                background_color:(12/255,126/255,200/255,1)
+                font_size:20
+                text:'Try again'
+                on_release:
+                    app.root.current="main"
+                    root.manager.transition.direction="down"
+            Button:
+                size_hint:(1,.1)
+                background_color:(12/255,126/255,200/255,1)
+                font_size:20
+                text:'Try again'
+                on_release:
+                    app.root.current="main"
+                    root.manager.transition.direction="down"
+            Button:
+                size_hint:(1,.1)
+                background_color:(12/255,126/255,200/255,1)
+                font_size:20
+                text:'Try again'
+                on_release:
+                    app.root.current="main"
+                    root.manager.transition.direction="down"
+            Button:
+                size_hint:(1,.1)
+                background_color:(12/255,126/255,200/255,1)
+                font_size:20
+                text:'Try again'
+                on_release:
+                    app.root.current="main"
+                    root.manager.transition.direction="down"
+            Button:
+                size_hint:(1,.1)
+                background_color:(12/255,126/255,200/255,1)
+                font_size:20
+                text:'Try again'
+                on_release:
+                    app.root.current="main"
+                    root.manager.transition.direction="down"
+            Button:
+                size_hint:(1,.1)
+                background_color:(12/255,126/255,200/255,1)
+                font_size:20
+                text:'Try again'
+                on_release:
+                    app.root.current="main"
+                    root.manager.transition.direction="down"
+            Button:
+                size_hint:(1,.1)
+                background_color:(12/255,126/255,200/255,1)
+                font_size:20
+                text:'Try again'
+                on_release:
+                    app.root.current="main"
+                    root.manager.transition.direction="down"
+            Button:
+                size_hint:(1,.1)
+                background_color:(12/255,126/255,200/255,1)
+                font_size:20
+                text:'Try again'
+                on_release:
+                    app.root.current="main"
+                    root.manager.transition.direction="down"
+            Button:
+                size_hint:(1,.1)
+                background_color:(12/255,126/255,200/255,1)
+                font_size:20
+                text:'Try again'
+                on_release:
+                    app.root.current="main"
+                    root.manager.transition.direction="down"
+
+
+
+<QA>:
+    name:'qa'
+    GridLayout:
+        rows:2
+        GridLayout:
+            cols:4
+            size_hint:(1,.1)
+            Button:
+                text:'Basics'
+                background_color:(12/255,126/255,200/255,1)
+                on_release:
+                    app.root.current="mapp"
+                    root.manager.transition.direction="right"
+
+            Button:
+                text:'madium'
+                background_color:(12/255,126/255,200/255,1)
+                on_release:
+                    app.root.current="lm"
+                    root.manager.transition.direction="right"
+            Button:
+                text:'Advance'
+                background_color:(12/255,126/255,200/255,1)
+                on_release:
+                    app.root.current="la"
+                    root.manager.transition.direction="right"
+            Button:
+                text:'Q&A'
+                background_color:(0,0,0, 1)
+                on_release:
+                    app.root.current="qa"
+                    root.manager.transition.direction="up"
+        GridLayout:
+            rows:11
+            Label:
+                text:'Q&A'
+                color:(12/255,126/255,200/255,1)
+                size_hint:(1,.08)
+                font_size:30
+            Button:
+                size_hint:(1,.1)
+                background_color:(12/255,126/255,200/255,1)
+                font_size:20
+                text:'Try again'
+                on_release:
+                    app.root.current="main"
+                    root.manager.transition.direction="down"
+            Button:
+                size_hint:(1,.1)
+                background_color:(12/255,126/255,200/255,1)
+                font_size:20
+                text:'Try again'
+                on_release:
+                    app.root.current="main"
+                    root.manager.transition.direction="down"
+            Button:
+                size_hint:(1,.1)
+                background_color:(12/255,126/255,200/255,1)
+                font_size:20
+                text:'Try again'
+                on_release:
+                    app.root.current="main"
+                    root.manager.transition.direction="down"
+            Button:
+                size_hint:(1,.1)
+                background_color:(12/255,126/255,200/255,1)
+                font_size:20
+                text:'Try again'
+                on_release:
+                    app.root.current="main"
+                    root.manager.transition.direction="down"
+            Button:
+                size_hint:(1,.1)
+                background_color:(12/255,126/255,200/255,1)
+                font_size:20
+                text:'Try again'
+                on_release:
+                    app.root.current="main"
+                    root.manager.transition.direction="down"
+            Button:
+                size_hint:(1,.1)
+                background_color:(12/255,126/255,200/255,1)
+                font_size:20
+                text:'Try again'
+                on_release:
+                    app.root.current="main"
+                    root.manager.transition.direction="down"
+            Button:
+                size_hint:(1,.1)
+                background_color:(12/255,126/255,200/255,1)
+                font_size:20
+                text:'Try again'
+                on_release:
+                    app.root.current="main"
+                    root.manager.transition.direction="down"
+            Button:
+                size_hint:(1,.1)
+                background_color:(12/255,126/255,200/255,1)
+                font_size:20
+                text:'Try again'
+                on_release:
+                    app.root.current="main"
+                    root.manager.transition.direction="down"
+            Button:
+                size_hint:(1,.1)
+                background_color:(12/255,126/255,200/255,1)
+                font_size:20
+                text:'Try again'
+                on_release:
+                    app.root.current="main"
+                    root.manager.transition.direction="down"
+            Button:
+                size_hint:(1,.1)
+                background_color:(12/255,126/255,200/255,1)
+                font_size:20
+                text:'Try again'
+                on_release:
+                    app.root.current="main"
+                    root.manager.transition.direction="down"
+
 
 
 # 12.126.171
