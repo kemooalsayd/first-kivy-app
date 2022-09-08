@@ -38,7 +38,6 @@ class MApp(Screen):
 
 class Myapp(App):
     def build(self):
-        self.arr=['','','','','','','','','','','']
         kv= Builder.load_file("main.kv")
         return kv
 if __name__=="__main__":
