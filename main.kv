@@ -1,15 +1,16 @@
 
 MW:
-    MApp:
     Intm:
     Intf:
     Ints:
     Intt:
     Siu:
     Ero:
+    MApp:
     Lm:
     La:
     QA:
+    Syntx:
 
 <Intm>:
     name:'introm'
@@ -57,7 +58,7 @@ MW:
     GridLayout:
         rows:6
         Label:
-            text:'HOW ARE YOU'
+            text:'HOW ARE YOU [1]'
             color:(12/255,126/255,200/255,1)
             size_hint:(1,.3)
         Label:
@@ -73,7 +74,7 @@ MW:
             size_hint:(1,.1)
             color:(12/255,126/255,200/255,1)
         Label:
-            text:'welcome to our apps we happy to see you'
+            text:'this app is very simple'
             color:(12/255,126/255,200/255,1)
             size_hint:(1,.3)
 
@@ -98,7 +99,7 @@ MW:
     GridLayout:
         rows:6
         Label:
-            text:'HOW ARE YOU'
+            text:'HOW ARE YOU [2]'
             color:(12/255,126/255,200/255,1)
             size_hint:(1,.3)
         Label:
@@ -114,7 +115,7 @@ MW:
             size_hint:(1,.1)
             color:(12/255,126/255,200/255,1)
         Label:
-            text:'welcome to our apps we happy to see you'
+            text:'app contains level for learn python'
             color:(12/255,126/255,200/255,1)
             size_hint:(1,.3)
 
@@ -139,7 +140,7 @@ MW:
     GridLayout:
         rows:6
         Label:
-            text:'HOW ARE YOU'
+            text:'HOW ARE YOU [3]'
             color:(12/255,126/255,200/255,1)
             size_hint:(1,.3)
         Label:
@@ -155,7 +156,7 @@ MW:
             size_hint:(1,.1)
             color:(12/255,126/255,200/255,1)
         Label:
-            text:'welcome to our apps we happy to see you'
+            text:'we hope for you nice trip'
             color:(12/255,126/255,200/255,1)
             size_hint:(1,.3)
 
@@ -178,6 +179,16 @@ MW:
 
 <Siu>:
     name:"main"
+    Button:
+        text:'skip'
+        color:(1,1,1,1)
+        background_color:(12/255,126/255,200/255,.8)
+        size_hint:(.15,.06)
+        pos_hint:{'center_x':.94, 'center_y': .94}
+        on_release:
+            app.root.current="mapp"
+            root.manager.transition.direction="left"
+
     GridLayout:
         cols:1
         rows:4
@@ -302,7 +313,7 @@ MW:
                 font_size:20
                 text:'syntax'
                 on_release:
-                    app.root.current="main"
+                    app.root.current="b-s"
                     root.manager.transition.direction="down"
             Button:
                 size_hint:(1,.1)
@@ -310,7 +321,7 @@ MW:
                 font_size:18
                 text:'varible&data types'
                 on_release:
-                    app.root.current="main"
+                    app.root.current="b-s"
                     root.manager.transition.direction="down"
             Button:
                 size_hint:(1,.1)
@@ -318,7 +329,7 @@ MW:
                 font_size:20
                 text:'booleans'
                 on_release:
-                    app.root.current="main"
+                    app.root.current="b-s"
                     root.manager.transition.direction="down"
             Button:
                 size_hint:(1,.1)
@@ -326,7 +337,7 @@ MW:
                 font_size:20
                 text:'numbers'
                 on_release:
-                    app.root.current="main"
+                    app.root.current="b-s"
                     root.manager.transition.direction="down"
             Button:
                 size_hint:(1,.1)
@@ -334,7 +345,7 @@ MW:
                 font_size:20
                 text:'strings'
                 on_release:
-                    app.root.current="main"
+                    app.root.current="b-s"
                     root.manager.transition.direction="down"
             Button:
                 size_hint:(1,.1)
@@ -342,7 +353,7 @@ MW:
                 font_size:20
                 text:'lists'
                 on_release:
-                    app.root.current="main"
+                    app.root.current="b-s"
                     root.manager.transition.direction="down"
             Button:
                 size_hint:(1,.1)
@@ -350,7 +361,7 @@ MW:
                 font_size:20
                 text:'for loop'
                 on_release:
-                    app.root.current="main"
+                    app.root.current="b-s"
                     root.manager.transition.direction="down"
             Button:
                 size_hint:(1,.1)
@@ -358,7 +369,7 @@ MW:
                 font_size:20
                 text:'if&else'
                 on_release:
-                    app.root.current="main"
+                    app.root.current="b-s"
                     root.manager.transition.direction="down"
             Button:
                 size_hint:(1,.1)
@@ -366,7 +377,7 @@ MW:
                 font_size:20
                 text:'functions'
                 on_release:
-                    app.root.current="main"
+                    app.root.current="b-s"
                     root.manager.transition.direction="down"
             Button:
                 size_hint:(1,.1)
@@ -374,7 +385,7 @@ MW:
                 font_size:20
                 text:'full example'
                 on_release:
-                    app.root.current="main"
+                    app.root.current="b-s"
                     root.manager.transition.direction="down"
 
 
@@ -422,7 +433,7 @@ MW:
                 font_size:20
                 text:'classes'
                 on_release:
-                    app.root.current="main"
+                    app.root.current="b-s"
                     root.manager.transition.direction="down"
             Button:
                 size_hint:(1,.1)
@@ -430,7 +441,7 @@ MW:
                 font_size:20
                 text:'oop'
                 on_release:
-                    app.root.current="main"
+                    app.root.current="b-s"
                     root.manager.transition.direction="down"
             Button:
                 size_hint:(1,.1)
@@ -438,7 +449,7 @@ MW:
                 font_size:18
                 text:'built in functions'
                 on_release:
-                    app.root.current="main"
+                    app.root.current="b-s"
                     root.manager.transition.direction="down"
             Button:
                 size_hint:(1,.1)
@@ -446,7 +457,7 @@ MW:
                 font_size:20
                 text:'map'
                 on_release:
-                    app.root.current="main"
+                    app.root.current="b-s"
                     root.manager.transition.direction="down"
             Button:
                 size_hint:(1,.1)
@@ -454,7 +465,7 @@ MW:
                 font_size:20
                 text:'reduce'
                 on_release:
-                    app.root.current="main"
+                    app.root.current="b-s"
                     root.manager.transition.direction="down"
             Button:
                 size_hint:(1,.1)
@@ -462,7 +473,7 @@ MW:
                 font_size:20
                 text:'filter'
                 on_release:
-                    app.root.current="main"
+                    app.root.current="b-s"
                     root.manager.transition.direction="down"
             Button:
                 size_hint:(1,.1)
@@ -470,7 +481,7 @@ MW:
                 font_size:20
                 text:'Regex'
                 on_release:
-                    app.root.current="main"
+                    app.root.current="b-s"
                     root.manager.transition.direction="down"
             Button:
                 size_hint:(1,.1)
@@ -478,7 +489,7 @@ MW:
                 font_size:18
                 text:'convert data types'
                 on_release:
-                    app.root.current="main"
+                    app.root.current="b-s"
                     root.manager.transition.direction="down"
             Button:
                 size_hint:(1,.1)
@@ -486,7 +497,7 @@ MW:
                 font_size:20
                 text:'Decorator'
                 on_release:
-                    app.root.current="main"
+                    app.root.current="b-s"
                     root.manager.transition.direction="down"
             Button:
                 size_hint:(1,.1)
@@ -494,7 +505,7 @@ MW:
                 font_size:20
                 text:'full example'
                 on_release:
-                    app.root.current="main"
+                    app.root.current="b-s"
                     root.manager.transition.direction="down"
 
 
@@ -542,7 +553,7 @@ MW:
                 font_size:20
                 text:'searching'
                 on_release:
-                    app.root.current="main"
+                    app.root.current="b-s"
                     root.manager.transition.direction="down"
             Button:
                 size_hint:(1,.1)
@@ -550,7 +561,7 @@ MW:
                 font_size:20
                 text:'linear search'
                 on_release:
-                    app.root.current="main"
+                    app.root.current="b-s"
                     root.manager.transition.direction="down"
             Button:
                 size_hint:(1,.1)
@@ -558,7 +569,7 @@ MW:
                 font_size:20
                 text:'Binary search'
                 on_release:
-                    app.root.current="main"
+                    app.root.current="b-s"
                     root.manager.transition.direction="down"
             Button:
                 size_hint:(1,.1)
@@ -566,7 +577,7 @@ MW:
                 font_size:20
                 text:'sorting'
                 on_release:
-                    app.root.current="main"
+                    app.root.current="b-s"
                     root.manager.transition.direction="down"
             Button:
                 size_hint:(1,.1)
@@ -574,7 +585,7 @@ MW:
                 font_size:20
                 text:'selection sort'
                 on_release:
-                    app.root.current="main"
+                    app.root.current="b-s"
                     root.manager.transition.direction="down"
             Button:
                 size_hint:(1,.1)
@@ -582,7 +593,7 @@ MW:
                 font_size:20
                 text:'heap sort'
                 on_release:
-                    app.root.current="main"
+                    app.root.current="b-s"
                     root.manager.transition.direction="down"
             Button:
                 size_hint:(1,.1)
@@ -590,7 +601,7 @@ MW:
                 font_size:20
                 text:'Binary tree'
                 on_release:
-                    app.root.current="main"
+                    app.root.current="b-s"
                     root.manager.transition.direction="down"
             Button:
                 size_hint:(1,.1)
@@ -598,7 +609,7 @@ MW:
                 font_size:20
                 text:'Recurcion'
                 on_release:
-                    app.root.current="main"
+                    app.root.current="b-s"
                     root.manager.transition.direction="down"
             Button:
                 size_hint:(1,.1)
@@ -606,7 +617,7 @@ MW:
                 font_size:20
                 text:'stack'
                 on_release:
-                    app.root.current="main"
+                    app.root.current="b-s"
                     root.manager.transition.direction="down"
             Button:
                 size_hint:(1,.1)
@@ -614,7 +625,7 @@ MW:
                 font_size:20
                 text:'full example'
                 on_release:
-                    app.root.current="main"
+                    app.root.current="b-s"
                     root.manager.transition.direction="down"
 
 
@@ -661,7 +672,7 @@ MW:
                 font_size:20
                 text:'why python'
                 on_release:
-                    app.root.current="main"
+                    app.root.current="b-s"
                     root.manager.transition.direction="down"
             Button:
                 size_hint:(1,.1)
@@ -669,7 +680,7 @@ MW:
                 font_size:20
                 text:'what can python do'
                 on_release:
-                    app.root.current="main"
+                    app.root.current="b-s"
                     root.manager.transition.direction="down"
             Button:
                 size_hint:(1,.1)
@@ -677,7 +688,7 @@ MW:
                 font_size:15
                 text:'can i work in big companies with python'
                 on_release:
-                    app.root.current="main"
+                    app.root.current="b-s"
                     root.manager.transition.direction="down"
             Button:
                 size_hint:(1,.1)
@@ -685,7 +696,7 @@ MW:
                 font_size:20
                 text:'where i find python jobs'
                 on_release:
-                    app.root.current="main"
+                    app.root.current="b-s"
                     root.manager.transition.direction="down"
             Label:
                 text:'soon the more'
@@ -693,6 +704,20 @@ MW:
                 size_hint:(1,.3)
                 font_size:20
 
-
-
-# 12.126.171
+<Syntx>:
+    name:'b-s'
+    ScrollView:
+        Label:
+            size_hint_y: None
+            height: self.texture_size[1]
+            text_size: self.width, None
+            color:(0,0,0,1)
+            padding: 10, 10
+            text:'hi this app created by kareem alsyd with kivy library thank you'*100
+    Button:
+        text:'back'
+        size_hint:(1,.08)
+        background_color:(12/255,126/255,200/255,1)
+        on_release:
+            app.root.current='mapp'
+            root.manager.transition.direction="up"

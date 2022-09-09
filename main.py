@@ -34,6 +34,9 @@ class Tw(Screen):
     pass
 class MApp(Screen):
     pass
+class Syntx(Screen):
+    pass
+
 
 
 class Myapp(App):
